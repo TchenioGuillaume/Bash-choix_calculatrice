@@ -1,0 +1,38 @@
+mkdir evaluation    #crée un dossier
+cd evaluation     #entrer dans le dossier "evaluation"
+nano index.html     #modifier le fichier "index.html"
+touch style.css    #crée un fichier "style.css"
+git init      #Initialiser un repository Git
+ls -a     #affiche les dossier caché
+
+
+git status    #Vérifier l'état des fichiers/dossiers de notre repo
+git add index.html style.css    #Ajoute les fichiers/dossiers et les met en attente de sauvegarde
+git add --all     #ajoute tout les fichiers
+git status    #il doit etre passé au vert
+git commit    #Sauvegarder les fichiers/dossiers (penser a mettre un commentaire sur ce que c'est)
+git config user.email "tchenioguillaume@gmail.com"     #connexion au compte
+git config user.name "TchenioGuillaume"   #connexion au compte
+git commit
+ecrire ligne "1" un commentaire   #il s'affichera sur le comit de github
+git remote
+git remote add origin https://github.com/TchenioGuillaume/Mon-premier-depo-Git.git    #choisi l'endroit ou vont les fichiers
+
+git push origin master    #envoi les fichiers master (obligatoire)
+git branch    #voir les nom des branches (utilisateurs) quisont dessus (celle ou je suis contient un asterix)
+git branch Guillaume    #rajoute une branch
+git checkout Guillaume      #aller sur la branch "Guillaume"
+git branch    #l'asterix doit etre sur "Guillaume"
+git branch -D Guillaume    #supprime la branch "Guillaume"
+git branch -b Guillaume     #permet d'aller sur la branch directement quand on la créé
+git branch
+
+
+git push origin Guillaume    #envoi les fichiers
+TchenioGuillaume    #id
+12121991E   #md
+
+
+git merge Guillaume Master    #bascule les donnees de "Guillaume" vers "Master"
+
+touch readme.md       #créer un fichier "readme"
